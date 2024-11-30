@@ -6,7 +6,7 @@ const Brand=require('./models/brand');
 const app=express();
 const port=3000;
 
-mongoose.connect('mongodb://localhost:27017/brandDB')
+mongoose.connect('mongodb+srv://nikithaaaa25:nikitha25@cluster0.krduy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(()=>console.log('Connect to MongoDB'))
     .catch(err=>console.error('error connecting to MongoDB',err));
 app.use(bodyParser.urlencoded({extended:true}))
